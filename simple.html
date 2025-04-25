@@ -1,14 +1,41 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <!-- Bootstrap CSS -->
-    <link href="./css/bootstrap.min.css" rel="stylesheet">
+    <link href="./css/bootstrap.min.css" rel="stylesheet" />
     <title>Hello, world!</title>
+
+    <style>
+      .parent {
+        width: 300px;
+        height: 300px;
+      }
+      .child {
+        width: 30px;
+        height: 30px;
+      }
+    </style>
   </head>
   <body>
-    <h1 class="p-3 bg-dark text-white">Hello, world!</h1>
+    <h1 class="p-3 m-5 bg-dark text-white">Hello, world!</h1>
+    <div class="card, ms-5 me-5 p-3">
+      <div class="row">some test</div>
+    </div>
+    <p class="d-none d-sm-block text-primary">.text-primary</p>
+    <p class="d-none d-md-block text-secondary">.text-secondary</p>
+    <p class="d-none d-lg-block text-success">.text-success</p>
+    <p class="d-none d-xxl-block text-danger">.text-danger</p>
+
+    <div class="parent bg-primary position-relative">
+      <div class="child bg-secondary position-absolute top-0 start-0"></div>
+      <div class="child bg-secondary position-absolute top-0 end-0"></div>
+      <div class="child bg-secondary position-absolute top-50 start-50"></div>
+      <div class="child bg-secondary position-absolute bottom-50 end-50"></div>
+      <div class="child bg-secondary position-absolute bottom-0 start-0"></div>
+      <div class="child bg-secondary position-absolute bottom-0 end-0"></div>
+    </div>
   </body>
 </html>
