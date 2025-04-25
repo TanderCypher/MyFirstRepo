@@ -9,33 +9,95 @@
     <title>Hello, world!</title>
 
     <style>
-      .parent {
+      .theBlueBox {
         width: 300px;
         height: 300px;
       }
-      .child {
+      .childOfBlueBox {
         width: 30px;
         height: 30px;
       }
+
+      #first {
+        height: auto;
+        background-color: rgb(189, 142, 93);
+        margin: 2rem;
+      }
+
+      .stickyHeaders {
+        position: sticky;
+        top: 0;
+        background-color: rgb(88, 67, 45);
+        z-index: 1;
+      }
+
+    body {
+      background-color: #f6bf77; /* doesn't need to be in the body tag */
+    }
+
+    #example1 {
+      background-color: rgb(255, 115, 0);
+    }
     </style>
   </head>
-  <body>
-    <h1 class="p-3 m-5 bg-dark text-white">Hello, world!</h1>
-    <div class="card, ms-5 me-5 p-3">
-      <div class="row">some test</div>
-    </div>
-    <p class="d-none d-sm-block text-primary">.text-primary</p>
-    <p class="d-none d-md-block text-secondary">.text-secondary</p>
-    <p class="d-none d-lg-block text-success">.text-success</p>
-    <p class="d-none d-xxl-block text-danger">.text-danger</p>
 
-    <div class="parent bg-primary position-relative">
-      <div class="child bg-secondary position-absolute top-0 start-0"></div>
-      <div class="child bg-secondary position-absolute top-0 end-0"></div>
-      <div class="child bg-secondary position-absolute top-50 start-50"></div>
-      <div class="child bg-secondary position-absolute bottom-50 end-50"></div>
-      <div class="child bg-secondary position-absolute bottom-0 start-0"></div>
-      <div class="child bg-secondary position-absolute bottom-0 end-0"></div>
+  <body>
+    <h1 class="p-3 m-0 text-white stickyHeaders">Hello, world!</h1>
+
+    <div class="card, ms-5 me-5 p-3 height: auto background-color: rgb(246, 185, 120)">
+      <div class="row" id="first" style="color: whitesmoke">hello from first row</div>
     </div>
+
+<div id="first" class="card ms-5 me-5 p-3">
+  <div class="row"> secound row: some colored paragraphs if window is really small</div>
+  <div class="col">
+    <p class="d-none d-sm-block text-primary">.text-primary if small screen</p>
+    <p class="d-none d-md-block text-secondary">.text-secondary if a little bigger screen</p>
+    <p class="d-none d-lg-block text-success">.text-success if used alot of screen</p>
+    <p class="d-none d-xxl-block text-danger">.text-danger if used all of screen</p>
+  </div> 
+</div>
+
+    <div class="container my-5">
+      <div class="row">
+        <div class="col">
+          <div class="card" id="example1">
+            <div class="card-body">
+              <h5 class="card-title">Column 1</h5>
+              <p class="card-text">This is the first column inside the row.</p>
+              <p class="card-text d-sm-block text-primary">.text-primary if small screen</p>
+              <p class="card-text d-md-block text-secondary">.text-secondary if a little bigger screen</p>
+              <p class="card-text d-lg-block text-success">.text-success if used alot of screen</p>
+              <p class="card-text d-xxl-block text-danger">.text-danger if used all of screen</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card" id="example1">
+            <div class="card-body">
+              <h5 class="card-title">Column 2</h5>
+              <p class="card-text">This is the second column inside the row.</p>
+              <p class="card-text d-none d-sm-block text-primary">.text-primary if small screen</p>
+              <p class="card-text d-none d-md-block text-secondary">.text-secondary if a little bigger screen</p>
+              <p class="card-text d-none d-lg-block text-success">.text-success if used alot of screen</p>
+              <p class="card-text d-none d-xxl-block text-danger">.text-danger if used all of screen</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container d-flex justify-content-center my-5">
+    <div class="theBlueBox bg-primary mx-5 position-relative">
+      <div class="childOfBlueBox bg-secondary position-absolute top-0 start-0"></div>
+      <div class="childOfBlueBox bg-secondary position-absolute top-0 end-0"></div>
+      <div class="childOfBlueBox bg-secondary position-absolute top-50 start-50"></div>
+      <div class="childOfBlueBox bg-secondary position-absolute bottom-50 end-50"></div>
+      <div class="childOfBlueBox bg-secondary position-absolute bottom-0 start-0"></div>
+      <div class="childOfBlueBox bg-secondary position-absolute bottom-0 end-0">
+        text ranting out of this position!
+      </div>
+    </div>
+
   </body>
 </html>
