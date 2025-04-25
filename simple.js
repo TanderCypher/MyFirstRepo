@@ -1,6 +1,26 @@
 console.log("Hello world!");
-/* 
-trying to do a change here
- */
 
-/* even more changes here!!! */
+/* function makeHigherAnchor() {
+    const higherAnchor = document.createElement("a");
+    higherAnchor.setAttribute("id", "higherAnchor");
+    document.body.appendChild(higherAnchor);
+} */
+
+$(document).ready(function () {
+    makeHigherAnchor();
+});
+
+function makeHigherAnchor() {
+    $("body").append("<a id='higherAnchor'>Touch me!</a>");
+    console.log("Higher has been reached!");
+
+    $("#higherAnchor").hover(function () {
+        $(this)
+            .attr("href", "#Top")
+            .attr("class", "position-fixed bottom-0 end-0 m-3")
+            .text("Top");
+
+            /* console.log("Higher has been reached!"); */
+            /* if hovered the console will log everytime after too! */
+    });
+}

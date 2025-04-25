@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <!-- Bootstrap CSS -->
     <link href="./css/bootstrap.min.css" rel="stylesheet" />
+    <script src="jquery-3.7.1.js"></script>
+    <script src="simple.js"></script>
     <title>Hello, world!</title>
 
     <style>
@@ -55,6 +57,7 @@
   </head>
 
   <body>
+    <div id="top"></div>
     <h1 class="p-3 m-0 text-white stickyHeaders">Hello, world!</h1>
 
     <div
@@ -131,6 +134,7 @@
       </div>
     </div>
 
+    <!-- the different colors in Bootstrap -->
     <div class="container d-flex justify-content-center my-5">
       <div class="theBlueBox bg-primary mx-5 position-relative">
         <div
@@ -169,6 +173,7 @@
       <p class="mx-5 text-white bg-dark">.text-white</p>
       <p class="mx-5 text-black-50">.text-black-50</p>
       <p class="mx-5 text-white-50 bg-dark">.text-white-50</p>
+      <!-- notice that # is just a URL holder and send you to top by default -->
       <a href="#" class="link-primary">Primary link</a>
       <a href="#" class="link-secondary">Secondary link</a>
       <a href="#" class="link-success">Success link</a>
@@ -179,17 +184,21 @@
       <a href="#" class="link-dark">Dark link</a>
     </div>
 
+    <!-- Isabell prøve i Norrøn Litteratur -->
     <div>
-      <h1 class="stickyHeaders mt-5" id="norønLitteratur">Norrøn litteratur</h1>
-      <h2 class="stickyHeaders mt-5" id="norønLitteratur">Ære og skam</h2>
+      <h1 class="p-3 m-0 text-white stickyHeaders" id="norønLitteratur">
+        Norrøn litteratur
+      </h1>
 
       <!--Prøve informasjon-->
-      <div class="p-3">
-        <div class="table-responsive-xxl">
-          <table class="table table-primary table-striped table-bordered">
+      <div class="p-3 mx-5">
+        <div>
+          <table
+            class="table table-primary table-striped table-bordered border-dark"
+          >
             <thead>
               <tr>
-                <th>Prøveinformasjon</th>
+                <th colspan="2">Prøveinformasjon</th>
               </tr>
             </thead>
             <tbody>
@@ -224,8 +233,10 @@
           </table>
 
           <h6>
-            <span style="background-color: chartreuse"
-              >Gjennomføring av prøven.</span
+            <!-- class="bg-success would be nice, but the color was too dark compaired to the acutal document!" -->
+            <!-- chartreus was closer -->
+            <span style="background-color: chartreuse">
+              Gjennomføring av prøven.</span
             >
           </h6>
           <ul>
@@ -434,5 +445,10 @@
         <!--2 siste div er begynnelsen på prøveinformasjon-->
       </div>
     </div>
+
+    <!-- a button to send you top -->
+    <!-- a id="Higher" href="#top" class="position-sticky bottom-0 start-100 p-3"
+      >Send me back to top!</a
+    > -->
   </body>
 </html>
