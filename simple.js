@@ -7,6 +7,16 @@ console.log("Hello world!");
 } */
 
 $(document).ready(function () {
+    //make header
+    //make first paragraph
+    //make second paragraph
+    //make cards
+    //make table
+    //make list
+    //make image
+    //make button
+    //make form
+    //make etc.
     makeHigherAnchor();
 });
 
