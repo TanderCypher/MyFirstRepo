@@ -31,56 +31,100 @@
         z-index: 1;
       }
 
-    body {
-      background-color: #f6bf77; /* doesn't need to be in the body tag */
-    }
+      body {
+        background-color: #f6bf77; /* doesn't need to be in the body tag */
+      }
 
-    #example1 {
-      background-color: rgb(255, 115, 0);
-    }
+      #example1 {
+        background-color: rgb(255, 115, 0);
+      }
+
+      #ÆreOgSkam {
+        background-color: rgb(76, 231, 211);
+      }
+
+      #norønLitteratur {
+        color: aliceblue;
+      }
+
+      #norønLitteraturOppgave {
+        color: rgb(0, 104, 136);
+        font-family: "Times New Roman", Times, serif;
+      }
     </style>
   </head>
 
   <body>
     <h1 class="p-3 m-0 text-white stickyHeaders">Hello, world!</h1>
 
-    <div class="card, ms-5 me-5 p-3 height: auto background-color: rgb(246, 185, 120)">
-      <div class="row" id="first" style="color: whitesmoke">hello from first row</div>
+    <div
+      class="card, ms-5 me-5 p-3 height: auto background-color: rgb(246, 185, 120)"
+    >
+      <div class="row" id="first" style="color: whitesmoke">
+        hello from first row
+      </div>
     </div>
 
-<div id="first" class="card ms-5 me-5 p-3">
-  <div class="row"> secound row: some colored paragraphs if window is really small</div>
-  <div class="col">
-    <p class="d-none d-sm-block text-primary">.text-primary if small screen</p>
-    <p class="d-none d-md-block text-secondary">.text-secondary if a little bigger screen</p>
-    <p class="d-none d-lg-block text-success">.text-success if used alot of screen</p>
-    <p class="d-none d-xxl-block text-danger">.text-danger if used all of screen</p>
-  </div> 
-</div>
+    <div id="first" class="card ms-5 me-5 p-3">
+      <div class="row">
+        secound row: some colored paragraphs if window is really small
+      </div>
+      <div class="col">
+        <p class="d-none d-sm-block text-primary">
+          .text-primary if small screen
+        </p>
+        <p class="d-none d-md-block text-secondary">
+          .text-secondary if a little bigger screen
+        </p>
+        <p class="d-none d-lg-block text-success">
+          .text-success if used alot of screen
+        </p>
+        <p class="d-none d-xxl-block text-danger">
+          .text-danger if used all of screen
+        </p>
+      </div>
+    </div>
 
+    <!--this is the dobbel cards-->
     <div class="container my-5">
       <div class="row">
         <div class="col">
           <div class="card" id="example1">
             <div class="card-body">
-              <h5 class="card-title">Column 1</h5>
+              <h6 class="card-title">Column 1</h6>
               <p class="card-text">This is the first column inside the row.</p>
-              <p class="card-text d-sm-block text-primary">.text-primary if small screen</p>
-              <p class="card-text d-md-block text-secondary">.text-secondary if a little bigger screen</p>
-              <p class="card-text d-lg-block text-success">.text-success if used alot of screen</p>
-              <p class="card-text d-xxl-block text-danger">.text-danger if used all of screen</p>
+              <p class="card-text d-sm-block text-primary">
+                .text-primary if small screen
+              </p>
+              <p class="card-text d-md-block text-secondary">
+                .text-secondary if a little bigger screen
+              </p>
+              <p class="card-text d-lg-block text-success">
+                .text-success if used alot of screen
+              </p>
+              <p class="card-text d-xxl-block text-danger">
+                .text-danger if used all of screen
+              </p>
             </div>
           </div>
         </div>
         <div class="col">
           <div class="card" id="example1">
             <div class="card-body">
-              <h5 class="card-title">Column 2</h5>
+              <h6 class="card-title">Column 2</h6>
               <p class="card-text">This is the second column inside the row.</p>
-              <p class="card-text d-none d-sm-block text-primary">.text-primary if small screen</p>
-              <p class="card-text d-none d-md-block text-secondary">.text-secondary if a little bigger screen</p>
-              <p class="card-text d-none d-lg-block text-success">.text-success if used alot of screen</p>
-              <p class="card-text d-none d-xxl-block text-danger">.text-danger if used all of screen</p>
+              <p class="card-text d-none d-sm-block text-primary">
+                .text-primary if small screen
+              </p>
+              <p class="card-text d-none d-md-block text-secondary">
+                .text-secondary if a little bigger screen
+              </p>
+              <p class="card-text d-none d-lg-block text-success">
+                .text-success if used alot of screen
+              </p>
+              <p class="card-text d-none d-xxl-block text-danger">
+                .text-danger if used all of screen
+              </p>
             </div>
           </div>
         </div>
@@ -88,38 +132,304 @@
     </div>
 
     <div class="container d-flex justify-content-center my-5">
-    <div class="theBlueBox bg-primary mx-5 position-relative">
-      <div class="childOfBlueBox bg-secondary position-absolute top-0 start-0"></div>
-      <div class="childOfBlueBox bg-secondary position-absolute top-0 end-0"></div>
-      <div class="childOfBlueBox bg-secondary position-absolute top-50 start-50"></div>
-      <div class="childOfBlueBox bg-secondary position-absolute bottom-50 end-50"></div>
-      <div class="childOfBlueBox bg-secondary position-absolute bottom-0 start-0"></div>
-      <div class="childOfBlueBox bg-secondary position-absolute bottom-0 end-0">
-        text ranting out of this position!
+      <div class="theBlueBox bg-primary mx-5 position-relative">
+        <div
+          class="childOfBlueBox bg-secondary position-absolute top-0 start-0"
+        ></div>
+        <div
+          class="childOfBlueBox bg-secondary position-absolute top-0 end-0"
+        ></div>
+        <div
+          class="childOfBlueBox bg-secondary position-absolute top-50 start-50"
+        ></div>
+        <div
+          class="childOfBlueBox bg-secondary position-absolute bottom-50 end-50"
+        ></div>
+        <div
+          class="childOfBlueBox bg-secondary position-absolute bottom-0 start-0"
+        ></div>
+        <div
+          class="childOfBlueBox bg-secondary position-absolute bottom-0 end-0"
+        >
+          text ranting out of this position!
+        </div>
       </div>
     </div>
+    <div>
+      <p class="mx-5 text-primary">.text-primary</p>
+      <p class="mx-5 text-secondary">.text-secondary</p>
+      <p class="mx-5 text-success">.text-success</p>
+      <p class="mx-5 text-danger">.text-danger</p>
+      <p class="mx-5 text-warning bg-dark">.text-warning</p>
+      <p class="mx-5 text-info bg-dark">.text-info</p>
+      <p class="mx-5 text-light bg-dark">.text-light</p>
+      <p class="mx-5 text-dark">.text-dark</p>
+      <p class="mx-5 text-body">.text-body</p>
+      <p class="mx-5 text-muted">.text-muted</p>
+      <p class="mx-5 text-white bg-dark">.text-white</p>
+      <p class="mx-5 text-black-50">.text-black-50</p>
+      <p class="mx-5 text-white-50 bg-dark">.text-white-50</p>
+      <a href="#" class="link-primary">Primary link</a>
+      <a href="#" class="link-secondary">Secondary link</a>
+      <a href="#" class="link-success">Success link</a>
+      <a href="#" class="link-danger">Danger link</a>
+      <a href="#" class="link-warning">Warning link</a>
+      <a href="#" class="link-info">Info link</a>
+      <a href="#" class="link-light">Light link</a>
+      <a href="#" class="link-dark">Dark link</a>
+    </div>
 
-    <p class="mx-5 text-primary">.text-primary</p>
-    <p class="mx-5 text-secondary">.text-secondary</p>
-    <p class="mx-5 text-success">.text-success</p>
-    <p class="mx-5 text-danger">.text-danger</p>
-    <p class="mx-5 text-warning bg-dark">.text-warning</p>
-    <p class="mx-5 text-info bg-dark">.text-info</p>
-    <p class="mx-5 text-light bg-dark">.text-light</p>
-    <p class="mx-5 text-dark">.text-dark</p>
-    <p class="mx-5 text-body">.text-body</p>
-    <p class="mx-5 text-muted">.text-muted</p>
-    <p class="mx-5 text-white bg-dark">.text-white</p>
-    <p class="mx-5 text-black-50">.text-black-50</p>
-    <p class="mx-5 text-white-50 bg-dark">.text-white-50</p>
-    <a href="#" class="link-primary">Primary link</a>
-    <a href="#" class="link-secondary">Secondary link</a>
-    <a href="#" class="link-success">Success link</a>
-    <a href="#" class="link-danger">Danger link</a>
-    <a href="#" class="link-warning">Warning link</a>
-    <a href="#" class="link-info">Info link</a>
-    <a href="#" class="link-light">Light link</a>
-    <a href="#" class="link-dark">Dark link</a>
+    <div>
+      <h1 class="stickyHeaders mt-5" id="norønLitteratur">Norrøn litteratur</h1>
+      <h2 class="stickyHeaders mt-5" id="norønLitteratur">Ære og skam</h2>
 
+      <!--Prøve informasjon-->
+      <div class="p-3">
+        <div class="table-respnsive-xxl">
+          <table class="table table-primary table-striped table-bordered">
+            <thead>
+              <tr>
+                <th>Prøveinformasjon</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Deltakere som skal gjennomføre prøven:</td>
+                <td>Isabel</td>
+              </tr>
+              <tr>
+                <td>Prøvetid:</td>
+                <td>Ca 30.min.</td>
+              </tr>
+              <tr>
+                <td>Læreplanmål (fagstoff)</td>
+                <td>
+                  Aktuelle læreplanmål: Kompetansemålene finner du inne på prøve
+                  2 på Itslearning
+                </td>
+              </tr>
+              <tr>
+                <td>Hjelpemiddel</td>
+                <td>Du kan ha med stikkordsnotater på maksimum en A4- side.</td>
+              </tr>
+              <tr>
+                <td>Framgangsmåte og krav til besvarelsen:</td>
+                <td>Muntlig Gjennomføres på Teams</td>
+              </tr>
+              <tr>
+                <td>Vurdering av besvarelsen:</td>
+                <td>Prøven vurderes med karakter</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <h6>
+            <span style="background-color: chartreuse"
+              >Gjennomføring av prøven.</span
+            >
+          </h6>
+          <ul>
+            <li>Prøven består av to deler.</li>
+            <li>
+              Du skal holde en presentasjon på <b>8-10 minutter</b> ut fra et
+              gitt tema.
+            </li>
+            <li>
+              Presentasjonen skal fungere som et utgangspunkt for videre samtale
+              som vil vare i ca. 20 minutter.
+            </li>
+            <li>
+              <b>
+                I del 2 av prøven får du spørsmål fra resten av pensumet. Du kan
+                ha med et A4- ark med stikkord på denne delen av prøven
+              </b>
+            </li>
+          </ul>
+
+          <h6><u>Informasjon om prøve 2 muntlig</u></h6>
+          <p>
+            Prøve 2 er en muntlig prøve via Teams om norrøn litteratur, norrønt
+            språk og folkediktning. Prøven skal dekke kompetansemål i både språk
+            og litteratur. Fagstoffet finner du på Itslearning eller NDLA (<a
+              href="https://ndla.no/"
+              >www.ndla.no</a
+            >).
+          </p>
+
+          <h2 id="norønLitteraturOppgave">Oppgave</h2>
+          <h2 id="norønLitteraturOppgave">
+            Tema: Ære og skam i norrøn litteratur og folkediktning
+          </h2>
+          <h6><b>Bakgrunn:</b></h6>
+          <p>
+            I norrøn tid var ære og skam sentrale temaer i samfunnet og preget
+            både hverdagsliv og fortellinger. I denne oppgaven skal du utforske
+            hvordan temaet blir fremstilt i norrøn litteratur og folkediktning.
+          </p>
+          <h6><b>Oppgavebeskrivelse:</b></h6>
+          <p>
+            Du skal forberede en muntlig presentasjon på inntil 10 minutter der
+            du drøfter temaene ære og skam. Bruk eksempler fra norrøn
+            litteratur, som sagaene, dikt samt fra norsk folkediktning.
+          </p>
+          <h6><b>Følgende punkter bør være med i presentasjonen din:</b></h6>
+          <ol>
+            <li>
+              <h6><b>Introduksjon til ære og skam: </b></h6>
+              <ul>
+                <li>Definer hva ære og skam betyr i en norrøn kontekst.</li>
+                <li>
+                  Forklar hvorfor disse temaene var viktige i det norrøne
+                  samfunnet.
+                </li>
+              </ul>
+            </li>
+            <li>
+              <h6>
+                <b>Ære og skam i norrøn litteratur og folkediktning:</b>
+              </h6>
+              <ul>
+                <li>
+                  Gi konkrete eksempler på hvordan ære og skam blir fremstilt i
+                  sagalitteratur og eventyr.
+                </li>
+                <li>
+                  Diskuter hvordan ære og skam påvirker karakterenes valg og
+                  handlinger.
+                </li>
+              </ul>
+            </li>
+            <li>
+              <h6>
+                <b>Sammenligning med dagens samfunn:</b>
+              </h6>
+              <ul>
+                <li>
+                  Reflekter over hvordan ære og skam kan sammenlignes med dagens
+                  samfunn.
+                </li>
+                <li>
+                  Kan du se spor av norrøn æreskodeks i moderne kulturer? Gi
+                  eksempler.
+                </li>
+              </ul>
+            </li>
+            <li>
+              <h6>
+                <b>Avslutning:</b>
+              </h6>
+              <ul>
+                <li>Oppsummer hovedpunktene i presentasjonen.</li>
+                <li>
+                  Del dine egne tanker om hvordan ære og skam påvirker oss i
+                  dag.
+                </li>
+              </ul>
+            </li>
+          </ol>
+
+          <h6><b>Presentasjonsformer:</b></h6>
+          <p>
+            Du kan bruke visuelle hjelpemidler som PowerPoint, plakater eller
+            andre kreative metoder i presentasjonen din.
+          </p>
+          <h6><b>Vurderingskriterier:</b></h6>
+          <p>Din presentasjon vil bli vurdert basert på:</p>
+          <ul>
+            <li>Innhold og dybde i analysen</li>
+            <li>Bruk av eksempler fra norrøn litteratur og folkediktning.</li>
+            <li>Klarhet og struktur i fremføringen.</li>
+            <li>Evnen til å knytte temaene til dagens samfunn.</li>
+          </ul>
+
+          <p>Lykke til med forberedelsene!</p>
+        </div>
+      </div>
+
+      <!--løsning-->
+
+      <h1 class="mx-5" id="norønLitteraturOppgave">Norrøn Mytologi</h1>
+      <div class="container my-5">
+        <div class="row">
+          <div class="col">
+            <div class="card" id="ÆreOgSkam">
+              <div class="card-body">
+                <h3 class="card-title" id="norønLitteraturOppgave">
+                  Introduksjon
+                </h3>
+                <p class="card-text">
+                  I norrøn kultur var ære og skam sentrale begreper som styrte
+                  både individets handlinger og samfunnets vurdering av
+                  verdighet og status. Disse verdiene var ikke bare personlige,
+                  men også kollektive – det vil si at en persons handlinger
+                  kunne påvirke hele slektens rykte.
+                </p>
+                <h4 class="card-title" id="norønLitteraturOppgave">
+                  Ære (heiðr)
+                </h4>
+                <p class="card-text d-sm-block text-primary">
+                  I norrøn sammenheng refererte til en persons sosiale verdi,
+                  som ble målt ut fra mot, lojalitet, ærlighet, dyktighet i kamp
+                  og evnen til å holde løfter. Ære var noe man kunne arve, men
+                  også noe man måtte forsvare og bygge opp gjennom egne
+                  handlinger. Å miste æren kunne føre til sosial utstøting.
+                </p>
+                <h4 class="card-title" id="norønLitteraturOppgave">
+                  Skam (skömm)
+                </h4>
+                <p class="card-text d-xxl-block text-danger">
+                  Var det motsatte av ære og ble forbundet med tap av respekt,
+                  feighet, løftebrudd eller uærlig oppførsel. Skam kunne ikke
+                  bare ramme individet, men også kaste skygge over hele slekten.
+                  Derfor var det ofte nødvendig å gjenopprette æren gjennom hevn
+                  eller tapperhet.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container my-5">
+        <div class="row">
+          <div class="col">
+            <div class="card" id="ÆreOgSkam">
+              <div class="card-body">
+                <h3 class="card-title" id="norønLitteraturOppgave">
+                  Hvorfor var ære og skam viktige i det norrøne samfunnet?
+                </h3>
+                <p class="card-text d-md-block text-secondary"></p>
+                Det norrøne samfunnet manglet en sentralisert statsmakt med
+                lover og politi slik vi kjenner det i dag. I stedet ble sosial
+                orden opprettholdt gjennom personlige bånd, gjensidige
+                forpliktelser og en sterk æreskultur. En persons ære var det
+                viktigste middelet for å sikre respekt, trygghet og allianser.
+                <ul>
+                  <li>
+                    Hevn som sosial mekanisme: Når noen ble krenket eller
+                    skadet, ble det forventet at man hevnet seg for å
+                    gjenopprette æren. Dette var ikke nødvendigvis et uttrykk
+                    for hat, men en sosial nødvendighet for å vise styrke og
+                    beskytte sitt navn.
+                  </li>
+                  <li>
+                    Skam som avskrekking: Frykten for å bli utstøtt eller sett
+                    ned på hindret mange fra å handle uærlig eller feigt. Skam
+                    fungerte dermed som en moralsk kontrollmekanisme i et
+                    samfunn der personlig rykte betydde alt.
+                  </li>
+                  <li>
+                    Sagaene som æresfortellinger: I de islandske sagaene ser vi
+                    hvordan karakterene ofte handler ut fra ønsket om å bevare
+                    eller vinne ære, og hvordan konflikter ofte springer ut fra
+                    skam og behovet for hevn.
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
