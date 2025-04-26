@@ -1,0 +1,48 @@
+.theBlueBox {
+  width: 300px;
+  height: 300px;
+}
+.childOfBlueBox {
+  width: 30px;
+  height: 30px;
+}
+
+#first {
+  height: auto;
+  background-color: rgb(189, 142, 93);
+  margin: 2rem;
+}
+
+.stickyHeaders {
+  position: sticky;
+  top: 0;
+  background-color: rgb(88, 67, 45);
+  z-index: 1;
+}
+
+body {
+  background-color: #f6bf77; /* doesn't need to be in the body tag */
+}
+
+#example1 {
+  background-color: rgb(255, 115, 0);
+}
+
+#ÆreOgSkam {
+  background-color: rgb(76, 231, 211);
+}
+
+#norønLitteratur {
+  color: aliceblue;
+}
+
+#norønLitteraturOppgave {
+  color: rgb(0, 104, 136);
+  font-family: "Times New Roman", Times, serif;
+}
+
+/* Custom style to visualize the normally invisible ::after */
+.stretched-link::after {
+  background: rgba(255, 0, 0, 0.2); /* Light red transparent */
+  border: 2px dashed red;
+}

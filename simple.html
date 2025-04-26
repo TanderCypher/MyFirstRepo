@@ -6,54 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <!-- Bootstrap CSS -->
     <link href="./css/bootstrap.min.css" rel="stylesheet" />
+    <link href="simple.css" rel="stylesheet" />
     <script src="jquery-3.7.1.js"></script>
     <script src="simple.js"></script>
     <title>Hello, world!</title>
 
-    <style>
-      .theBlueBox {
-        width: 300px;
-        height: 300px;
-      }
-      .childOfBlueBox {
-        width: 30px;
-        height: 30px;
-      }
 
-      #first {
-        height: auto;
-        background-color: rgb(189, 142, 93);
-        margin: 2rem;
-      }
-
-      .stickyHeaders {
-        position: sticky;
-        top: 0;
-        background-color: rgb(88, 67, 45);
-        z-index: 1;
-      }
-
-      body {
-        background-color: #f6bf77; /* doesn't need to be in the body tag */
-      }
-
-      #example1 {
-        background-color: rgb(255, 115, 0);
-      }
-
-      #ÆreOgSkam {
-        background-color: rgb(76, 231, 211);
-      }
-
-      #norønLitteratur {
-        color: aliceblue;
-      }
-
-      #norønLitteraturOppgave {
-        color: rgb(0, 104, 136);
-        font-family: "Times New Roman", Times, serif;
-      }
-    </style>
   </head>
 
   <body>
@@ -446,6 +404,7 @@
       </div>
     </div>
 
+    <!-- forms -->
     <div class="container">
       <label for="email" class="form-label">Email</label>
       <input type="email" class="form-control" id="email" placeholder="Email" />
@@ -458,9 +417,9 @@
         <div class="row">
           <!-- first picachu -->
           <div class="col-md-3">
-            <div class="card">
-              <div class="card-body text-bg-dark">
-                <h3 class="card-title ">Picachu</h3>
+            <div class="card rounded-4">
+              <div class="card-body text-bg-dark rounded-5">
+                <h3 class="card-title">Picachu</h3>
                 <img
                   class="border-top border-primary"
                   src="https://i.pinimg.com/originals/c9/40/a3/c940a3dae3900d100990e5b697ef196c.jpg"
@@ -468,15 +427,15 @@
                   style="width: 125px"
                 />
                 <p class="card-text">
-                  Picachu is eating a popsicle. He is very happy and cute.
+                  Card body is rounded more than the card.
                 </p>
               </div>
             </div>
           </div>
           <!-- secound picachu -->
           <div class="col-md-3">
-            <div class="card">
-              <div class="card-body text-bg-dark">
+            <div class="card rounded-0">
+              <div class="card-body text-bg-dark rounded-5">
                 <h3 class="card-title">Picachu</h3>
                 <img
                   class="border border-top-0 border-5 border-warning"
@@ -485,14 +444,14 @@
                   alt="Pika Pika"
                 />
                 <p class="card-text">
-                  Picachu is eating a popsicle. He is very happy and cute.
+                  Card not rounded at all, but the body is.
                 </p>
               </div>
             </div>
           </div>
           <!-- third picachu -->
           <div class="col-md-3">
-            <div class="card">
+            <div class="card rounded-5">
               <div class="card-body text-bg-dark">
                 <h3 class="card-title">Picachu</h3>
                 <img
@@ -502,15 +461,16 @@
                   alt="Pika Pika"
                 />
                 <p class="card-text">
-                  Picachu is eating a popsicle. He is very happy and cute.
+                  The card itself are rouded, but not the body. We're cutting
+                  the border.
                 </p>
               </div>
             </div>
           </div>
           <!-- fourth picachu -->
           <div class="col-md-3">
-            <div class="card">
-              <div class="card-body text-bg-dark">
+            <div class="card rounded">
+              <div class="card-body text-bg-dark rounded">
                 <h3 class="card-title">Picachu</h3>
                 <img
                   class="border-bottom rounded-bottom"
@@ -528,9 +488,69 @@
       </div>
     </div>
 
-    <!-- a button to send you top -->
-    <!-- a id="Higher" href="#top" class="position-sticky bottom-0 start-100 p-3"
-      >Send me back to top!</a
-    > -->
+    <div class="container m-5">
+      <div class="w-25 p-3" style="background-color: #eee">Width 25%</div>
+    </div>
+    <!-- sizes -->
+    <div>
+      <div class="w-25 p-3" style="background-color: #eee">Width 25%</div>
+      <br />
+      <div class="w-50 p-3" style="background-color: #eee">Width 50%</div>
+      <div class="w-75 p-3" style="background-color: #eee">Width 75%</div>
+      <div class="w-100 p-3" style="background-color: #eee">Width 100%</div>
+      <div class="w-auto p-3" style="background-color: #eee">Width auto</div>
+      <br />
+      <div style="height: 100px; background-color: rgba(255, 0, 0, 0.1)">
+        <div
+          class="h-25 d-inline-block"
+          style="width: 120px; background-color: rgba(0, 0, 255, 0.1)"
+        >
+          Height 25%
+        </div>
+        <div
+          class="h-50 d-inline-block"
+          style="width: 120px; background-color: rgba(0, 0, 255, 0.1)"
+        >
+          Height 50%
+        </div>
+        <div
+          class="h-75 d-inline-block"
+          style="width: 120px; background-color: rgba(0, 0, 255, 0.1)"
+        >
+          Height 75%
+        </div>
+        <div
+          class="h-100 d-inline-block"
+          style="width: 120px; background-color: rgba(0, 0, 255, 0.1)"
+        >
+          Height 100%
+        </div>
+        <div
+          class="h-auto d-inline-block"
+          style="width: 120px; background-color: rgba(0, 0, 255, 0.1)"
+        >
+          Height auto
+        </div>
+      </div>
+      <!-- 
+    To show sizes of the screen, you ca use the following classess:
+    <div class="bg-primary min-vw-100">Min-width 100vw</div>
+    <div class="bg-success min-vh-100">Min-height 100vh</div>
+    <div class="bg-secondary vw-100">Width 100vw</div>
+    <div class="bg-warning vh-100">Height 100vh</div>
+ -->
+    </div>
+
+    <div class="d-flex position-relative mt-5">
+      <div>
+        <h5 class="mt-0">Custom component with stretched link</h5>
+        <p>
+          This is some placeholder content for the custom component. It is
+          intended to mimic what some real-world content would look like, and
+          we’re using it here to give the component a bit of body and size.
+        </p>
+        <a href="https://google.com" class="stretched-link">Go somewhere</a>
+      </div>
+    </div>
   </body>
 </html>

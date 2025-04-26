@@ -7,16 +7,6 @@ console.log("Hello world!");
 } */
 
 $(document).ready(function () {
-    //make header
-    //make first paragraph
-    //make second paragraph
-    //make cards
-    //make table
-    //make list
-    //make image
-    //make button
-    //make form
-    //make etc.
     makeHigherAnchor();
 });
 
@@ -29,8 +19,5 @@ function makeHigherAnchor() {
             .attr("href", "#Top")
             .attr("class", "position-fixed bottom-0 end-0 m-3")
             .text("Top");
-
-            /* console.log("Higher has been reached!"); */
-            /* if hovered the console will log everytime after too! */
     });
 }
