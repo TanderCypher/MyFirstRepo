@@ -21,3 +21,9 @@ function makeHigherAnchor() {
             .text("Top");
     });
 }
+
+$("document").ready(function () {
+    $(".list-group-item").click(function () {
+        $(this).toggleClass("goButton");
+    });
+});

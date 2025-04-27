@@ -77,3 +77,8 @@ body {
     font-size: 10.72px;
     font-weight: bold;
 }
+
+.goButton {
+  background-color: rgb(0, 181, 0);
+  color: white;
+}
