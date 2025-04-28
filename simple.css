@@ -48,37 +48,61 @@ body {
 }
 
 #theTaskH {
-    color: rgb(166, 49, 49);
-    font-family:Arial, Helvetica, sans-serif;
-
+  color: rgb(166, 49, 49);
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .TH1 {
-    font-size: 32px;
-    font-weight: bold;
+  font-size: 32px;
+  font-weight: bold;
 }
 .TH2 {
-    font-size: 24px;
-    font-weight: bold;
+  font-size: 24px;
+  font-weight: bold;
 }
 .TH3 {
-    font-size: 18.72px;
-    font-weight: bold;
+  font-size: 18.72px;
+  font-weight: bold;
 }
 .TH4 {
-    font-size: 16px;
-    font-weight: bold;
+  font-size: 16px;
+  font-weight: bold;
 }
 .TH5 {
-    font-size: 13.28px;
-    font-weight: bold;
+  font-size: 13.28px;
+  font-weight: bold;
 }
 .TH6 {
-    font-size: 10.72px;
-    font-weight: bold;
+  font-size: 10.72px;
+  font-weight: bold;
 }
 
 .goButton {
-  background-color: rgb(0, 181, 0);
+  background-color: rgb(0, 195, 0);
   color: white;
+  transition: background-color 1s ease, color 1s ease;
 }
+
+.goButton:hover {
+  background-color: rgb(1, 105, 1);
+  color: white;
+  transition: background-color 1s ease, color 1s ease;
+}
+/* 
+.list-group-item:hover {
+  background-color: grey;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.list-group-item {
+  background-color: white;
+  color: black;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+ */
+
+ .TBRed {
+    border: 3px solid red;
+    border-style: dotted;
+ }

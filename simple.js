@@ -27,3 +27,15 @@ $("document").ready(function () {
         $(this).toggleClass("goButton");
     });
 });
+
+/* 
+$(".list-group-item").hover(function () {
+    $(this).addClass("goButton");
+}, function () {
+    $(this).removeClass("goButton");
+});
+}); */
+
+function changeToGreen(button) {
+    $(button).addClass("list-group-item-success");
+}
