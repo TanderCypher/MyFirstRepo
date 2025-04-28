@@ -686,18 +686,18 @@
 
     <!-- added TBRed class for border -->
     <!-- added margin to the last one to show extra space between, not just padding/gutter -->
-    <div class="container mt-5">
+    <div class="container mt-5 TBRed">
       <!-- No gutters -->
       <h3 class="TBRed">No Gutter (.g-0)</h3>
-      <div class="row g-0">
-        <div class="col bg-primary text-white p-3">Column 1</div>
-        <div class="col bg-success text-white p-3">Column 2</div>
+      <div class="row g-0 TBRed">
+        <div class="col bg-primary text-white p-3 TBRed">Column 1</div>
+        <div class="col bg-success text-white p-3 TBRed">Column 2</div>
       </div>
 
       <hr />
 
       <!-- Normal gutter -->
-      <h3>Default Gutter (.g-3)</h3>
+      <h3 class="TBRed">Default Gutter (.g-3)</h3>
       <div class="row g-3 TBRed">
         <div class="col bg-primary text-white p-3 TBRed">Column 1</div>
         <div class="col bg-success text-white p-3 TBRed">Column 2</div>
@@ -706,8 +706,8 @@
       <hr />
 
       <!-- Only horizontal gutter (very wide) -->
-      <h3>Horizontal Only (.gx-5)</h3>
-      <div class="row gx-5">
+      <h3 class="TBRed">Horizontal Only (.gx-5)</h3>
+      <div class="row gx-5 TBRed">
         <div class="col bg-primary text-white p-3 TBRed">Column 1</div>
         <div class="col bg-success text-white p-3 TBRed">Column 2</div>
       </div>
@@ -715,7 +715,7 @@
       <hr />
 
       <!-- Only vertical gutter -->
-      <h3>Vertical Only (.gy-5)</h3>
+      <h3 class="TBRed">Vertical Only (.gy-5)</h3>
       <div class="row gy-5 TBRed">
         <div class="col bg-primary text-white p-3 m-5 TBRed">Column 1</div>
         <div class="col bg-success text-white p-3 TBRed">Column 2</div>
@@ -723,5 +723,31 @@
     </div>
 
     <hr />
+
+    <div class="row g-0">
+      <div class="col-md-4">
+        <div class="card bg-primary text-white">Card 1</div>
+      </div>
+      <div class="col-md-4">
+        <div class="card bg-danger text-white">Card 2</div>
+      </div>
+      <div class="col-md-4">
+        <div class="card bg-success text-white">Card 3</div>
+      </div>
+    </div>
+
+    <div class="row g-3">
+      <div class="col-md-4 TBRed order-3">
+        <div class="card bg-primary text-white TBRed">Card 1</div>
+      </div>
+      <div class="col-md-4">
+        <div class="card bg-danger text-white TBRed">
+          Card 2 we're showing orders
+        </div>
+      </div>
+      <div class="col-md-4 TBRed order-1">
+        <div class="card bg-success text-white TBRed">Card 3 notice that Card 2 are not ordered</div>
+      </div>
+    </div>
   </body>
 </html>
