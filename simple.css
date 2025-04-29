@@ -116,3 +116,10 @@ body {
 div span#main.content:hover {
   background-color: lightblue;
 }
+
+li a[aria-disabled="true"] {
+  color: red !important;
+  pointer-events: none;
+  opacity: 0.6; /* Optional: greyed-out look */
+  cursor: not-allowed;
+}
