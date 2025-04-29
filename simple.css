@@ -102,7 +102,17 @@ body {
 }
  */
 
- .TBRed {
-    border: 2px solid red;
-    border-style: dotted;
- }
+.TBRed {
+  border: 2px solid red;
+  border-style: dotted;
+}
+
+.TBWhite {
+  border: 1px solid rgb(255, 255, 255);
+  border-style: line;
+}
+
+/* cool thing, that the div don't need to be there! */
+div span#main.content:hover {
+  background-color: lightblue;
+}
