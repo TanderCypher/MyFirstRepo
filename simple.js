@@ -39,3 +39,9 @@ $(".list-group-item").hover(function () {
 function changeToGreen(button) {
     $(button).addClass("list-group-item-success");
 }
+
+$(document).ready(function () {
+    $("#liveToastBtn").click(function () {
+        $("#liveToast").toast("show");
+    });
+});
