@@ -40,6 +40,7 @@ function changeToGreen(button) {
     $(button).addClass("list-group-item-success");
 }
 
+/* the toast function */
 $(document).ready(function () {
     $("#liveToastBtn").click(function () {
         $("#liveToast").toast("show");
